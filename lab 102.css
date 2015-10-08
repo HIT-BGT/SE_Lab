@@ -9,9 +9,38 @@ body {
   margin: 0;
   text-align: center;
 }
-body h1{
-  font-size: 300%;
+body p.caption span.text{
+  display: none;
 }
+body p.caption a{
+  font-size: 300%;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body p.caption a:link{
+  color: #4B5168;
+  text-decoration: none;
+}
+body p.caption a:visited{
+  color: #4B5168;
+  text-decoration: underline;
+}
+body p.caption a:hover{
+  color: #979EB4;
+  text-decoration: none;
+}
+@media (min-width: 650px) {
+  body p.caption{
+    padding-left: 20px;
+  }
+  body p.caption span.text{
+    display: inline;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+
 #board {
   height: 300px;
   overflow: hidden;
@@ -53,7 +82,7 @@ body h1{
 -------------------------------------------------------------- */
 .tic-tac-toe {
   height: 300px;
-  margin: 0px auto;
+  margin: 20px auto;
   position: relative;
   width: 300px;
 }
@@ -78,7 +107,7 @@ body h1{
   left: 100px;
   top: 310px;
   color : green;
-  font-size: 25px;
+  font-size: 25px; 
 }
 .tic-tac-toe span.player-2{
   left: 100px;
